@@ -706,15 +706,15 @@ body {
   margin-bottom: 2rem;
 }
 .banner__btn a {
-  border-radius: 5rem;
+  border-radius: 5rem !important;
   width: 100%;
-  font-size: 2rem;
+  font-size: 2rem !important;
   font-weight: bolder;
 }
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 520px) {
   .banner {
     height: 80vh;
-    padding-top: 10rem;
+    padding-top: 15rem;
     background-image: url("../img/banner.jpg");
     background-size: cover;
   }
@@ -749,8 +749,264 @@ body {
   }
   .banner__btn a {
     width: unset;
-    padding: 1.5rem 5rem;
+    padding: 1.5rem 5rem !important;
   }
+}
+
+.proven {
+  padding: 5rem 0;
+  text-align: center;
+  border-bottom: 20px solid #e75f66;
+}
+.proven__wrapper {
+  margin: 0 2rem;
+}
+.proven__text h3 {
+  font-size: 4rem;
+}
+.proven__text p {
+  margin-top: 2rem;
+}
+.proven__card {
+  margin-top: 8rem;
+}
+.proven__card__item {
+  margin-top: 8rem;
+}
+.proven__card__item h3 {
+  color: #e75f66;
+  font-size: 2.5rem;
+}
+.proven__card__item p {
+  font-size: 1.8rem;
+  margin: 2rem 3rem 0;
+  text-align: center;
+}
+@media screen and (min-width: 520px) {
+  .proven__card {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 8rem;
+  }
+  .proven__card__item {
+    margin: 0;
+  }
+  .proven__card__item p {
+    margin: 0 2rem;
+  }
+  .proven__text p {
+    margin: 2rem 6rem;
+  }
+}
+
+.claim {
+  background: #2e2e2e;
+  text-align: center;
+  color: #fff;
+}
+.claim__wrapper h3 {
+  font-size: 5rem;
+}
+.claim__wrapper a {
+  padding: 1.5rem 5rem !important;
+  border-radius: 5rem !important;
+  margin-top: 2rem;
+  font-size: 2rem !important;
+  cursor: pointer;
+  width: unset;
+  font-weight: bold;
+}
+
+.robert {
+  padding: 5rem 0;
+  border-bottom: 20px solid #e75f66;
+}
+.robert__item {
+  text-align: center;
+}
+.robert__item:last-child {
+  margin-top: 5rem;
+}
+.robert__item__text h3 {
+  font-size: 4rem;
+  margin: 1rem 0;
+}
+.robert__item__text p {
+  text-align: left;
+  margin: 0 2rem;
+  line-height: 2;
+  font-size: 1.8rem;
+}
+@media screen and (min-width: 520px) {
+  .robert__item {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-gap: 5rem;
+    text-align: left;
+  }
+  .robert__item__text p {
+    margin: 0;
+  }
+}
+
+.testimony {
+  padding: 5rem 0;
+  position: relative;
+  z-index: -999;
+}
+.testimony .tns-control {
+  display: block;
+  justify-content: space-between;
+}
+.testimony .tns-control button {
+  position: absolute;
+  top: 50%;
+  z-index: 999;
+  background-color: #e75f66;
+  border-color: #e75f66;
+}
+.testimony .tns-control button:first-child {
+  left: 2rem;
+}
+.testimony .tns-control button:last-child {
+  left: 2rem;
+}
+.testimony .tns-nav {
+  text-align: center;
+}
+.testimony .tns-nav .tns-nav-active {
+  background-color: #e75f66;
+}
+.testimony .tns-nav button {
+  background-color: #2e2e2e;
+  border-color: #2e2e2e;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 5rem;
+  margin: 5rem 2rem 0;
+  border: unset;
+}
+.testimony__card__item {
+  text-align: center;
+  margin: 0;
+  padding: 0 5rem;
+}
+.testimony__card__item__text {
+  margin-bottom: 3rem;
+}
+.testimony__card__item__text h3 {
+  padding-bottom: 3rem;
+}
+.testimony__card__item__text hr {
+  max-width: 25rem;
+  margin: 0 auto;
+}
+@media screen and (min-width: 520px) {
+  .testimony__card__text__text {
+    margin: 0 1rem;
+  }
+}
+
+.faq {
+  border-bottom: 20px solid #e75f66;
+  background-color: #f2f7f3;
+  padding: 7rem 0;
+}
+.faq__wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+.faq__wrapper h2 {
+  font-size: 4rem;
+}
+.faq__text h4 {
+  color: #e75f66;
+  font-weight: 700;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+.faq__text p {
+  line-height: 2;
+}
+
+.location {
+  font-family: "Poppins";
+  background-color: #2e2e2e;
+  padding: 5rem 0;
+  color: #fff;
+}
+.location a {
+  color: #fff;
+}
+.location__wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 15rem;
+  align-items: center;
+}
+.location__information__address {
+  margin-bottom: 3rem;
+}
+.location__information__address h2 {
+  font-size: 3.7rem;
+  line-height: 1.5;
+  font-weight: bolder;
+}
+.location__information__address p {
+  line-height: 2;
+}
+.location__information__address h3 {
+  font-weight: normal;
+  font-size: 1.6rem;
+}
+.location__information__contact {
+  border-top: 3px solid #e75f66;
+  border-bottom: 3px solid #e75f66;
+  max-width: 51rem;
+  padding: 2rem 0;
+  margin-bottom: 3rem;
+  line-height: 1.6;
+}
+.location__information__open {
+  line-height: 1.6;
+  text-align: balance;
+}
+
+.footer {
+  max-height: 20vh;
+  padding: 5rem 0;
+  font-family: "Poppins";
+  background-color: #e75f66;
+  color: #fff;
+}
+.footer__wrapper {
+  margin-bottom: 2rem;
+}
+.footer__wrapper ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer__wrapper ul li a {
+  color: #fff;
+  position: relative;
+}
+.footer__wrapper ul li a::after {
+  content: "|";
+  position: absolute;
+  margin-left: 8rem;
+}
+.footer__wrapper ul li:last-child a::after {
+  content: none;
+}
+.footer .copyright {
+  display: flex;
+  height: 7.5rem;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
 }
 
 .header {
@@ -758,6 +1014,7 @@ body {
   width: 100%;
   border-bottom: 20px solid #e75f66;
   background: #fff;
+  z-index: 9999;
 }
 .header .branding img {
   width: 100%;
@@ -816,7 +1073,7 @@ body {
   transform: translate(3px, -9px) rotate(225deg);
   transition: 0.5s ease;
 }
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 520px) {
   .header .branding img {
     width: 100%;
     height: 100%;
